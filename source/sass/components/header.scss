@@ -6,8 +6,9 @@
         min-width: 1024px;
         max-width: 1240px;
         min-height: 100px;
-        padding: 35px;
+        padding: 0 35px;
         margin: 0 auto;
+        box-sizing: border-box;
     }
 
     &__logo {
@@ -18,7 +19,7 @@
     &__logo-wrapper {
         width: 58px;
         height: 22px;
-        margin-right: auto;
+        flex-grow: 1;
     }
 
     &__number {

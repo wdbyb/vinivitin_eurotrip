@@ -1,0 +1,133 @@
+.intro {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    min-height: 860px;
+
+    &__wrapper {
+        position: absolute;
+        width: 100%;
+        z-index: -1;
+    }
+
+    &__bg {
+        width: 100%;
+        height: 860px;
+        object-fit: cover;
+        object-position: 50% 50%;
+    }
+
+    &__invite {
+        display: flex;
+        flex-direction: column;
+        width: 410px;
+        min-height: 500px;
+        margin-right: 22.5%;
+        color: #fff;
+    }
+
+    &__title {
+        margin-bottom: 30px;
+        font-size: 55px;
+        line-height: 80px;
+        font-weight: 600;
+    }
+
+    &__description {
+        margin-bottom: 40px;
+        font-size: 16px;
+        line-height: 27px;
+        letter-spacing: -0.47px;
+    }
+
+    &__link {
+        position: relative;
+        width: 340px;
+        height: 75px;
+        padding: 30px 40px;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+        font-weight: 700;
+        background: #FE7865;
+        box-sizing: border-box;
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            top: 50%;
+            right: 40px;
+            transform: translateY(-50%);
+            background-image: url("../img/arrow-down-icon.svg");
+            background-repeat: no-repeat;
+            background-position: 0 0;
+        }
+    }
+}
+
+@media (max-width: 1023px) {
+    .intro {
+        min-height: 344px;
+
+        &__bg {
+            height: 344px;
+        }
+
+        &__invite {
+            justify-content: flex-start;
+            align-items: center;
+            width: 400px;
+            min-height: 300px;
+            margin: 0 auto;
+        }
+
+        &__title {
+            margin-bottom: 15px;
+            font-size: 30px;
+            line-height: 45px;
+            text-align: center;
+        }
+
+        &__description {
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        &__link {
+            width: 250px;
+            height: 50px;
+            padding: 19px 40px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .intro {
+        align-items: flex-start;
+        min-height: 430px;
+
+        &__bg {
+            height: 235px;
+        }
+
+        &__invite {
+            width: 294px;
+        }
+
+        &__title {
+            margin-top: 81px;
+            margin-bottom: 102px;
+        }
+
+        &__description {
+            color: #000;
+        }
+
+        &__link {
+            width: 288px;
+        }
+    }
+}
