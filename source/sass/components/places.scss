@@ -1,0 +1,163 @@
+.places {
+    margin-top: 200px;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        min-width: 1024px;
+        max-width: 1240px;
+        padding: 0 35px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    &__title {
+        position: relative;
+
+        width: 358px;
+
+        margin-bottom: 64px;
+
+        font-size: 55px;
+        line-height: 80px;
+        font-weight: 600;
+        letter-spacing: -1.25px;
+        color: #2C2E3F;
+
+        &::before {
+            content: "";
+
+            position: absolute;
+
+            bottom: -30px;
+            left: 0;
+
+            width: 228px;
+            height: 4px;
+
+            background: #FE7865;
+        }
+    }
+
+    &__description {
+        width: 328px;
+
+        margin-bottom: 56px;
+
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: -0.5px;
+        color: rgba(44, 46, 63, 0.7);
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &__item {
+        position: relative;
+
+        width: 350px;
+
+        margin-bottom: 101px;
+
+        text-align: center;
+    }
+
+    &__wrapper {
+    }
+
+    &__image {
+        width: 350px;
+        height: 430px;
+    }
+
+    &__country {
+        position: absolute;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        bottom: 0;
+        left: 50%;
+
+        width: 215px;
+        min-height: 61px;
+
+        background: #fff;
+
+        transform: translateX(-50%);
+
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+    }
+}
+
+@media (max-width: 1023px) {
+    .places {
+        &__container {
+            align-items: center;
+
+            min-width: auto;
+        }
+
+        &__title {
+            width: 301px;
+
+            margin-bottom: 20px;
+
+            font-size: 30px;
+            line-height: 45px;
+
+            text-align: center;
+
+            &::before {
+                display: none;
+            }
+        }
+
+        &__description {
+            width: 343px;
+
+            text-align: center;
+        }
+
+        &__list {
+            justify-content: center;
+
+            width: auto;
+
+        }
+
+        &__item {
+            width: 288px;
+
+            margin-bottom: 19px;
+        }
+
+        &__image {
+            width: 288px;
+            height: 425px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .places {
+        &__title {
+            width: 288px;
+
+            font-size: 24px;
+            line-height: 36px;
+        }
+
+        &__description {
+            width: 288px;
+        }
+    }
+}

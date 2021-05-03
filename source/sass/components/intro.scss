@@ -1,9 +1,16 @@
 .intro {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    min-height: 860px;
+    &__container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        min-width: 1024px;
+        max-width: 1240px;
+        min-height: 860px;
+        padding: 0 35px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
 
     &__wrapper {
         position: absolute;
@@ -23,7 +30,7 @@
         flex-direction: column;
         width: 410px;
         min-height: 500px;
-        margin-right: 22.5%;
+        margin-right: 70px;
         color: #fff;
     }
 
@@ -70,7 +77,12 @@
 
 @media (max-width: 1023px) {
     .intro {
-        min-height: 344px;
+        &__container {
+            flex-direction: column;
+            min-width: auto;
+            min-height: 344px;
+            padding: 0;
+        }
 
         &__bg {
             height: 344px;
@@ -106,8 +118,10 @@
 
 @media (max-width: 767px) {
     .intro {
-        align-items: flex-start;
-        min-height: 430px;
+        &__container {
+            align-items: flex-start;
+            min-height: 430px;
+        }
 
         &__bg {
             height: 235px;
