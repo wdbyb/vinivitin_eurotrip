@@ -1,0 +1,226 @@
+.footer {
+    padding: 80px 0;
+
+    color: rgba(20, 21, 23, 0.5);
+
+    &__container {
+        position: relative;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        flex-wrap: wrap;
+
+        min-width: 1024px;
+        max-width: 1240px;
+        padding: 0 35px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    &__title {
+        margin-bottom: 20px;
+
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 32px;
+
+        color: #141517;
+    }
+
+    &__block {
+        display: flex;
+        flex-direction: column;
+
+        width: 390px;
+        min-height: 190px;
+
+        border-right: 1px solid #D7D9DF;
+
+        box-sizing: border-box;
+
+        &--contacts {
+            padding-left: 90px;
+            padding-right: 30px;
+        }
+
+        &--corp {
+            padding-left: 49px;
+
+            border-right: none;
+        }
+    }
+
+    &__corp-description {
+        font-size: 14px;
+        line-height: 170%;
+    }
+
+    &__link {
+        font-size: 14px;
+        line-height: 17px;
+        
+        text-decoration-line: underline;
+
+        color: #FE7865;
+    }
+
+    &__contacts-item {
+        position: relative;
+
+        display: block;
+        
+        padding-left: 41px;
+
+        margin-bottom: 20px;
+
+        &--tel {
+            &::before {
+                content: "";
+    
+                position: absolute;
+    
+                left: 0;
+                bottom: -5px;
+    
+                width: 30px;
+                height: 30px;
+    
+                background-image: url("../img/phone-grey.svg");
+                background-repeat: no-repeat;
+            }
+        }
+
+        &--mail {
+            &::before {
+                content: "";
+    
+                position: absolute;
+    
+                left: 0;
+                bottom: 0;
+    
+                width: 26px;
+                height: 20px;
+    
+                background-image: url("../img/mail-grey.svg");
+                background-repeat: no-repeat;
+            }
+        }
+    }
+
+    &__top-section {
+        display: flex;
+
+        padding-bottom: 30px;
+    }
+
+    .next-trip {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        &__item {
+            width: 129px;
+        }
+
+        &__city {
+            margin-bottom: 10px;
+
+            font-size: 14px;
+            line-height: 17px;
+        }
+    }
+}
+
+@media (max-width: 1023px) {
+    .footer {
+        padding-bottom: 0;
+
+        &__container {
+            min-width: auto;
+        }
+
+        &__block {
+            width: 416px;
+
+            padding-left: 21px;
+
+            &--contacts {
+                width: 352px;
+
+                padding-left: 50px;
+                padding-right: 44px;
+
+                border: none;
+            }
+
+            &--corp {
+                align-items: center;
+
+                width: auto;
+
+                padding: 0;
+            }
+        }
+
+        &__corp-description {
+            text-align: center;
+        }
+
+        &__top-section {
+            margin-bottom: 30px;
+
+            border-bottom: 1px solid #D7D9DF;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .footer {
+        padding: 0;
+        
+        &__container {
+            flex-direction: column;
+
+            padding: 0;
+        }
+
+        &__top-section {
+            flex-direction: column;
+
+            border: none;
+        }
+
+        &__block {
+            flex-direction: column;
+
+            align-items: center;
+            justify-content: center;
+
+            width: 296px;
+
+            padding: 0;
+
+            border: none;
+            border-bottom: 1px solid #D7D9DF;
+        }
+
+        &__contacts {
+            &-item {
+                text-align: center;
+
+                &--tel::before {
+                    left: 36px;
+                }
+            }
+        }
+
+        .next-trip {
+            &__item {
+                text-align: center;
+            }
+        }
+    }
+}
