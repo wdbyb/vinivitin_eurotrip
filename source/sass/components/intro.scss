@@ -1,20 +1,25 @@
 .intro {
     &__container {
         position: relative;
+
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        min-width: 1024px;
-        max-width: 1240px;
+
+        width: 100%;
         min-height: 860px;
-        padding: 0 35px;
-        margin: 0 auto;
+
+        padding-right: 20.5%;
+        padding-left: 19.5%;
+
         box-sizing: border-box;
     }
 
     &__wrapper {
         position: absolute;
+
         width: 100%;
+
         z-index: -1;
     }
 
@@ -30,7 +35,7 @@
         flex-direction: column;
         width: 410px;
         min-height: 500px;
-        margin-right: 70px;
+        margin-right: 40px;
         color: #fff;
     }
 

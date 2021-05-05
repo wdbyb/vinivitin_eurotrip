@@ -4,11 +4,13 @@
     &__container {
         display: flex;
         flex-direction: column;
+
         position: relative;
-        min-width: 1024px;
-        max-width: 1240px;
-        padding: 0 35px;
-        margin: 0 auto;
+
+        width: 100%;
+
+        padding: 0% 19.5%;
+
         box-sizing: border-box;
     }
 
@@ -62,12 +64,9 @@
 
         width: 350px;
 
-        margin-bottom: 101px;
+        margin-bottom: 94px;
 
         text-align: center;
-    }
-
-    &__wrapper {
     }
 
     &__image {

@@ -2,20 +2,32 @@
     &__container {
         display: flex;
         flex-direction: column;
+
         position: relative;
-        min-width: 1024px;
-        max-width: 1240px;
-        padding: 0 35px;
-        margin: 0 auto;
+
+        width: 100%;
+
+        padding: 0% 19.5%;
+
         box-sizing: border-box;
+    }
+
+    &__image {
+        width: 430;
+        height: 596px;
     }
 
     &__main {
         display: flex;
+        flex-wrap: wrap;
     }
 
     &__headers {
         display: flex;
+        flex-wrap: wrap;
+
+        width: 100%;
+        max-width: 900px;
 
         padding-bottom: 15px;
 
@@ -46,7 +58,10 @@
     &__info {
         width: 370px;
 
+        padding-top: 6px;
+
         margin-right: 100px;
+        margin-bottom: 46px;
     }
 
     &__title {
@@ -91,7 +106,8 @@
     &__review {
         position: relative;
 
-        width: 700px;
+        width: 100%;
+        max-width: 700px;
     }
 
     &__button {
@@ -209,6 +225,8 @@
         }
 
         &__headers {
+            flex-wrap: nowrap;
+            
             margin-bottom: 33px;
 
             overflow: hidden;
