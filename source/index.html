@@ -26,22 +26,22 @@
           </svg>            
         </div>
         <nav class="header__nav site-nav">
-          <button class="site-nav__button reset-button" type="button"><span></span></button>
+          <button class="site-nav__button reset-button" type="button" data-opened="false"><span></span></button>
           <ul class="site-nav__list reset-list">
             <li class="site-nav__item">
-              <a href="">
+              <a href="#places">
                 О путешествии
               </a>
             </li>
             <li class="site-nav__item">
-              <a href="">
+              <a href="#price">
                 Цены
               </a>
             </li>
           </ul>
         </nav>
         <p class="header__number reset-text">
-          <a href="">
+          <a href="tel:+749978468446">
             +7 (499) -784-684-46
           </a>
         </p>
@@ -51,7 +51,7 @@
       <h1 class="visually-hidden">Туристическое агентство Way</h1>
       <section class="intro">
         <div class="intro__wrapper">
-          <img class="intro__bg" width="1920" height="860" src="img/top-bg.jpg" alt="">
+          <img class="intro__bg" width="1920" height="860" src="img/top-bg.jpg" alt="Греция скалы метеоры">
         </div>
         <div class="intro__container">
           <div class="intro__invite">
@@ -59,49 +59,49 @@
             <p class="intro__description reset-text">
               В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а также потрясающая красота природы.
             </p>
-            <a href="" class="intro__link">Смотреть тур</a>
+            <a href="#countries" class="intro__link">Смотреть тур</a>
           </div>
         </div>
       </section>
-      <section class="places">
+      <section class="places" id="places">
         <div class="places__container">
           <h2 class="places__title reset-text">Места посещения</h2>
           <p class="places__description reset-text">Вы можете выбрать полный тур или частичный, с посещением первых 3 мест</p>
           <ul class="places__list reset-list">
             <li class="places__item">
               <div class="places__wrapper">
-                <img class="places__image" width="350" height="430" src="img/greece-photo.jpg" alt="">
+                <img class="places__image" width="350" height="430" src="img/greece-photo.jpg" alt="Скалы метеоры в греции">
               </div>
               <h3 class="places__country reset-text">Греция</h3>
             </li>
             <li class="places__item">
               <div class="places__wrapper">
-                <img class="places__image" width="350" height="430" src="img/albania-photo.jpg" alt="">
+                <img class="places__image" width="350" height="430" src="img/albania-photo.jpg" alt="Пляж в Албании">
               </div>
               <h3 class="places__country reset-text">Албания</h3>
             </li>
             <li class="places__item">
               <div class="places__wrapper">
-                <img class="places__image" width="350" height="430" src="img/macedonia-photo.jpg" alt="">
+                <img class="places__image" width="350" height="430" src="img/macedonia-photo.jpg" alt="Церковь в Македонии">
               </div>
               <h3 class="places__country reset-text">Македония</h3>
             </li>
             <li class="places__item">
               <div class="places__wrapper">
-                <img class="places__image" width="350" height="430" src="img/montenegro-photo.jpg" alt="">
+                <img class="places__image" width="350" height="430" src="img/montenegro-photo.jpg" alt="Река в Черногории">
               </div>
               <h3 class="places__country reset-text">Черногория</h3>
             </li>
             <li class="places__item">
               <div class="places__wrapper">
-                <img class="places__image" width="350" height="430" src="img/croatia-photo.jpg" alt="">
+                <img class="places__image" width="350" height="430" src="img/croatia-photo.jpg" alt="Пещеры Хорватии">
               </div>
               <h3 class="places__country reset-text">Хорватия</h3>
             </li>
           </ul>
         </div>
       </section>
-      <section class="countries">
+      <section class="countries" id="countries">
         <h2 class="visually-hidden">Страны для путешествия</h2>
         <div class="countries__container">
           <ul class="countries__headers reset-list">
@@ -120,14 +120,14 @@
               </div>
               <div class="countries__review">
                 <div class="countries__wrapper">
-                  <img width="430" height="596" src="img/greece-photo.jpg" alt="" class="countries__image">
+                  <img width="430" height="596" src="img/greece-photo.jpg" alt="Скалы метеоры в Греции" class="countries__image">
                 </div>
                 <div class="countries__message message">
                   <p class="message__title reset-text">Отзывы</p>
                   <p class="message__body reset-text">Метеоры в Греции можно сравнить разве что с Монсерратт в Испании. Такие же высоченные скалы. Но здесь потрясает масштаб. Огромная территория, высоко в горах. Ощущение такое, как будто стоишь на краю света!</p>
                   <div class="message__author reset-text">
                     <div class="message__wrapper">
-                      <img class="message__avatar" width="38" height="38" src="img/greece-review-avatar.jpg" alt="">
+                      <img class="message__avatar" width="38" height="38" src="img/greece-review-avatar.jpg" alt="Аватар пользователя">
                     </div>
                     <span>Влада Голицина</span>
                   </div>
@@ -142,14 +142,14 @@
               </div>
               <div class="countries__review">
                 <div class="countries__wrapper">
-                  <img width="430" height="596" src="img/albania-photo.jpg" alt="" class="countries__image">
+                  <img width="430" height="596" src="img/albania-photo.jpg" alt="Пляж в Албании" class="countries__image">
                 </div>
                 <div class="countries__message message">
                   <p class="message__title reset-text">Отзывы</p>
                   <p class="message__body reset-text">Замечательный курорт, обязательно стоит посетить. В следующий раз возьму с собой сестру, чтобы тоже смогла вкусить все красоты природы :)</p>
                   <div class="message__author reset-text">
                     <div class="message__wrapper">
-                      <img class="message__avatar" width="38" height="38" src="img/albania-review-avatar.jpg" alt="">
+                      <img class="message__avatar" width="38" height="38" src="img/albania-review-avatar.jpg" alt="Аватар пользователя">
                     </div>
                     <span>Маришка</span>
                   </div>
@@ -164,14 +164,14 @@
               </div>
               <div class="countries__review">
                 <div class="countries__wrapper">
-                  <img width="430" height="596" src="img/macedonia-photo.jpg" alt="" class="countries__image">
+                  <img width="430" height="596" src="img/macedonia-photo.jpg" alt="Церковь в Македонии" class="countries__image">
                 </div>
                 <div class="countries__message message">
                   <p class="message__title reset-text">Отзывы</p>
                   <p class="message__body reset-text">Я бы сказал необычное старое здание. В архитектуре я не разбираюсь, но подъем в гору был очень веселым так как люди оказались легкими и заводными. Красота природы впечатлила, особенно после долгого пути в гору.</p>
                   <div class="message__author reset-text">
                     <div class="message__wrapper">
-                      <img class="message__avatar" width="38" height="38" src="img/macedonia-review-avatar.jpg" alt="">
+                      <img class="message__avatar" width="38" height="38" src="img/macedonia-review-avatar.jpg" alt="Аватар пользователя">
                     </div>
                     <span>Михаил Кузьмин</span>
                   </div>
@@ -186,14 +186,14 @@
               </div>
               <div class="countries__review">
                 <div class="countries__wrapper">
-                  <img width="430" height="596" src="img/montenegro-photo.jpg" alt="" class="countries__image">
+                  <img width="430" height="596" src="img/montenegro-photo.jpg" alt="Река в Черногории" class="countries__image">
                 </div>
                 <div class="countries__message message">
                   <p class="message__title reset-text">Отзывы</p>
                   <p class="message__body reset-text">Неописуемой красоты каньон! Ничего прекраснее в жизни не видела, разве что в фильмах :) Всем советую</p>
                   <div class="message__author reset-text">
                     <div class="message__wrapper">
-                      <img class="message__avatar" width="38" height="38" src="img/montenegro-review-avatar.jpg" alt="">
+                      <img class="message__avatar" width="38" height="38" src="img/montenegro-review-avatar.jpg" alt="Аватар пользователя">
                     </div>
                     <span>Анастасия Мей</span>
                   </div>
@@ -208,14 +208,14 @@
               </div>
               <div class="countries__review">
                 <div class="countries__wrapper">
-                  <img width="430" height="596" src="img/croatia-photo.jpg" alt="" class="countries__image">
+                  <img width="430" height="596" src="img/croatia-photo.jpg" alt="Пещеры в Хорватии" class="countries__image">
                 </div>
                 <div class="countries__message message">
                   <p class="message__title reset-text">Отзывы</p>
                   <p class="message__body reset-text">Мы поехали всей семьей, я, моя жена и родители. Пещера просто незабываема! А то, что все это формировалось тысячелетиями, мега необычно. Первоначально даже не верилось, но натур ни с чем не спутать по итогу :)</p>
                   <div class="message__author reset-text">
                     <div class="message__wrapper">
-                      <img class="message__avatar" width="38" height="38" src="img/croatia-review-avatar.jpg" alt="">
+                      <img class="message__avatar" width="38" height="38" src="img/croatia-review-avatar.jpg" alt="Аватар пользователя">
                     </div>
                     <span>Владимир Мулицин</span>
                   </div>
@@ -225,7 +225,7 @@
           </ul>
         </div>
       </section>
-      <section class="price">
+      <section class="price" id="price">
         <div class="price__container">
           <div class="price__header">
             <h2 class="price__main-title reset-text">Цены</h2>
@@ -266,9 +266,9 @@
         <h2 class="visually-hidden">Форма обратной связи</h2>
         <div class="questions__container">
           <div class="questions__wrapper">
-            <img class="questions__image" width="844" height="455" src="img/questions-bg.jpg" alt="">
+            <img class="questions__image" width="844" height="455" src="img/questions-bg.jpg" alt="Море и розовый закат">
           </div>
-          <form class="questions__form" action="" method="POST">
+          <form class="questions__form" action="#" method="POST">
             <p class="questions__title reset-text">У Вас остались вопросы?</p>
             <p class="questions__description reset-text">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
             <div class="questions__block">
@@ -324,7 +324,7 @@
             <a href="mailto:puteshestviemechta@gmail.ru" class="footer__link">puteshestviemechta@gmail.ru</a>
           </p>
           <p class="footer__contacts-item footer__contacts-item--tel reset-text">
-            <a href="tel:+7 (499) -784-684-46" class="footer__link">+7 (499) -784-684-46</a>
+            <a href="tel:+749978468446" class="footer__link">+7 (499) -784-684-46</a>
           </p>
         </div>
         <div class="footer__block footer__block--corp">

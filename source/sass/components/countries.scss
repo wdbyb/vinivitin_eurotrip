@@ -46,6 +46,8 @@
 
         color: rgba(44, 46, 63, 0.3);
 
+        cursor: pointer;
+
         &:last-child {
             margin-right: 0;
         }
@@ -128,6 +130,12 @@
         color: #fff;
 
         background: #FE7865;
+
+        &:hover,
+        &:active,
+        &:focus {
+            background: #F17D4B;
+        }
     }
 }
 
@@ -323,6 +331,7 @@
 
         &__button {
             width: 100%;
+            max-width: 288px;
 
             margin: 0;
         }

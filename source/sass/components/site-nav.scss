@@ -37,6 +37,12 @@
 
     &__item {
         margin-right: 40px;
+
+        &:hover,
+        &:active,
+        &:focus {
+            color: #FE7865;
+        }
     }
 }
 
@@ -53,11 +59,18 @@
             display: none;
             flex-direction: column;
             justify-content: center;
+
             position: absolute;
+
             top: 50px;
             right: 0;
+
+            z-index: 5;
+
             width: 320px;
             min-height: 518px;
+
+            background-color: #fff;
         }
 
         &__item {

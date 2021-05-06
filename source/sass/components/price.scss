@@ -110,9 +110,26 @@
         border-radius: 6px;
 
         box-sizing: border-box;
+
+        &:hover,
+        &:active,
+        &:focus {
+            border: 3px solid #FE7865;
+
+            .price__title {
+                color: #FE7865;
+            }
+
+            .price__description {
+                border-bottom: 1px solid #FE7865;
+            }
+        }
     }
 
     &__title {
+        display: flex;
+        justify-content: space-between;
+
         margin-bottom: 38px;
 
         font-weight: 600;
@@ -196,6 +213,12 @@
 
         &--complex {
             margin-top: 10px;
+        }
+
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: #F17D4B;
         }
     }
 }
@@ -297,9 +320,9 @@
         }
 
         &__title {
-            display: flex;
             flex-direction: column;
 
+            justify-content: flex-start;
             align-items: center;
 
             margin-bottom: 11px;
