@@ -99,10 +99,18 @@
 
 @media (max-width: 1023px) {
     .places {
+        margin-top: 64px;
+
         &__container {
             align-items: center;
 
+            width: 78.5%;
             min-width: auto;
+
+            padding: 0;
+
+            margin: 0 auto;
+            margin-bottom: 96px;
         }
 
         &__title {
@@ -123,20 +131,30 @@
         &__description {
             width: 343px;
 
+            margin-bottom: 42px;
+
             text-align: center;
         }
 
         &__list {
-            justify-content: center;
+            justify-content: flex-start;
 
             width: auto;
-
         }
 
         &__item {
             width: 288px;
 
             margin-bottom: 19px;
+            margin-right: auto;
+
+            &:nth-child(2n) {
+                margin-right: 0;
+            }
+
+            &:last-child {
+                margin: 0 auto;
+            }
         }
 
         &__image {
@@ -148,6 +166,14 @@
 
 @media (max-width: 767px) {
     .places {
+        margin-top: 108px;
+
+        &__container {
+            width: auto;
+
+            margin-bottom: 40px;
+        }
+
         &__title {
             width: 288px;
 
@@ -157,6 +183,17 @@
 
         &__description {
             width: 288px;
+
+            margin-bottom: 20px;
+        }
+
+        &__list {
+            justify-content: center;
+        }
+
+        &__item {
+            margin: 0;
+            margin-bottom: 30px;
         }
     }
 }

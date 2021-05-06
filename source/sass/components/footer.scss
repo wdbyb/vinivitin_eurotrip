@@ -140,10 +140,14 @@
 
 @media (max-width: 1023px) {
     .footer {
-        padding-bottom: 0;
+        padding: 0;
 
         &__container {
+            justify-content: center;
+            
             min-width: auto;
+
+            padding: 0;
         }
 
         &__block {
@@ -155,7 +159,6 @@
                 width: 352px;
 
                 padding-left: 50px;
-                padding-right: 44px;
 
                 border: none;
             }
@@ -163,9 +166,16 @@
             &--corp {
                 align-items: center;
 
-                width: auto;
+                width: 94.5%;
 
                 padding: 0;
+                padding-top: 28px;
+
+                margin: 0 auto;
+                margin-top: 18px;
+
+                border: none;
+                border-top: 1px solid #D7D9DF;
             }
         }
 
@@ -184,6 +194,7 @@
 @media (max-width: 767px) {
     .footer {
         padding: 0;
+        padding-bottom: 25px;
         
         &__container {
             flex-direction: column;
@@ -204,25 +215,54 @@
             justify-content: center;
 
             width: 296px;
+            min-height: auto;
 
             padding: 0;
 
+            margin: 0 auto;
+
             border: none;
             border-bottom: 1px solid #D7D9DF;
+
+            &--contacts {
+                justify-content: flex-start;
+
+                padding-top: 30px;
+            }
+
+            &--corp {
+                padding-top: 31px;
+
+                border: none;
+            }
         }
 
         &__contacts {
             &-item {
                 text-align: center;
 
-                &--tel::before {
-                    left: 36px;
+                &--tel {
+                    margin-bottom: 20px;
+
+                    &::before {
+                        left: -10px;
+                    }
                 }
             }
         }
 
+        &__title {
+            margin-bottom: 20px;
+        }
+
+        &__corp-description {
+            width: 290px;
+        }
+
         .next-trip {
             &__item {
+                margin-bottom: 10px;
+
                 text-align: center;
             }
         }

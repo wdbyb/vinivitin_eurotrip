@@ -94,10 +94,13 @@
         }
 
         &__invite {
-            justify-content: flex-start;
             align-items: center;
+            
             width: 400px;
             min-height: 300px;
+
+            padding-top: 60px;
+
             margin: 0 auto;
         }
 
@@ -109,7 +112,7 @@
         }
 
         &__description {
-            margin-bottom: 15px;
+            margin-bottom: 12px;
             text-align: center;
         }
 
@@ -125,6 +128,8 @@
     .intro {
         &__container {
             align-items: flex-start;
+            justify-content: flex-start;
+
             min-height: 430px;
         }
 
@@ -134,14 +139,21 @@
 
         &__invite {
             width: 294px;
+
+            padding-top: 82px;
         }
 
         &__title {
-            margin-top: 81px;
+            margin: 0;
             margin-bottom: 102px;
+
+            font-size: 24px;
+            line-height: 150%;
         }
 
         &__description {
+            margin-bottom: 22px;
+
             color: #000;
         }
 
