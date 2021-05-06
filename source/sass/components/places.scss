@@ -192,9 +192,14 @@
 
         &__list {
             justify-content: center;
+
+            padding-left: 5%;
+            padding-right: 5%;
         }
 
         &__item {
+            flex-grow: 1;
+            
             margin: 0;
             margin-bottom: 30px;
         }
